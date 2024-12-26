@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор відпустки</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Калькулятор відпустки</h1>
+  <label for="start-date">Дата початку відпустки:</label>
+  <input type="date" id="start-date">
+
+  <label for="duration">Тривалість відпустки (днів):</label>
+  <input type="number" id="duration" min="1">
+
+  <label for="end-date">Дата завершення відпустки:</label>
+  <input type="date" id="end-date">
+
+  <label for="holidays">Святкові дні (через кому):</label>
+  <textarea id="holidays" placeholder="Наприклад: 2024-01-01, 2024-01-07"></textarea>
+
+  <button id="calculate">Розрахувати</button>
+
+  <p class="warning" id="warning"></p>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
